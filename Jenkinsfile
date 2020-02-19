@@ -45,8 +45,8 @@ spec:
           step([$class: 'ElectricFlowPipelinePublisher',
             configuration: 'flow-sko-jenkins-config',
             projectName: 'User39_Project',
-            pipelineName: 'user39_pipeline',
-            addParam: '{"pipeline":{"pipelineName":"user39_pipeline","parameters":"[{\\\"parameterName\\\": \\\"jenkinsJobName\\\", \\\"parameterValue\\\": \\\"'+"${env.JOB_NAME}"+'\\\"},{\\\"parameterName\\\": \\\"jenkinsBuildNumber\\\", \\\"parameterValue\\\": \\\"'+"${env.BUILD_NUMBER}"+'\\\"}]"}}'
+            pipelineName: 'user39test',
+            addParam: '{"pipeline":{"pipelineName":"user39test","parameters":"[{\\\"parameterName\\\": \\\"param1\\\", \\\"parameterValue\\\": \\\"'+"${env.JOB_NAME}"+'\\\"},{\\\"parameterName\\\": \\\"param2\\\", \\\"parameterValue\\\": \\\"'+"${env.BUILD_NUMBER}"+'\\\"}]"}}'
           ])
         }
       }
